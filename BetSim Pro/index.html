@@ -731,6 +731,7 @@ const LEAGUES_DATA = [
   {id:'sa',name:'Serie A',flag:'🇮🇹',country:'Italy'},
   {id:'bl',name:'Bundesliga',flag:'🇩🇪',country:'Germany'},
   {id:'l1',name:'Ligue 1',flag:'🇫🇷',country:'France'},
+  {id:'as',name:'Abissnet Superiore',flag:'🇦🇱',country:'Albania'},
   {id:'ed',name:'Eredivisie',flag:'🇳🇱',country:'Netherlands'},
 ];
 
@@ -905,12 +906,12 @@ const TEAMS_DB = {
               {n:'Stankovic',p:'RW'},{n:'Biereth',p:'ST'},{n:'Böving',p:'LW'}],
      bench:[{n:'Siebenhandl',p:'GK'},{n:'Johnston',p:'RB'},{n:'Geyrhofer',p:'CB'},{n:'Horvat',p:'LB'},{n:'Chukwuani',p:'CDM'},{n:'Gorenc-Stankovic',p:'CM'},{n:'Sarkaria',p:'ST'}],
      formation:'4-3-3'},
-    {id:'bri',name:'Brighton',emoji:'🔵',color:'#0057B8',logo:'https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg',strength:78,form:0,
-     players:[{n:'Verbruggen',p:'GK'},{n:'Lamptey',p:'RB'},{n:'Dunk',p:'CB'},{n:'Van Hecke',p:'CB'},{n:'Estupiñán',p:'LB'},
-              {n:'Gross',p:'CDM'},{n:'Gilmour',p:'CM'},{n:'Baleba',p:'CM'},
-              {n:'Mitoma',p:'RW'},{n:'Welbeck',p:'ST'},{n:'João Pedro',p:'LW'}],
-     bench:[{n:'Steele',p:'GK'},{n:'Veltman',p:'RB'},{n:'Igor',p:'CB'},{n:'March',p:'LB'},{n:'Dahoud',p:'CDM'},{n:'Enciso',p:'CM'},{n:'Adingra',p:'ST'}],
-     formation:'4-2-3-1'},
+    {id:'tir',name:'KF Tirana',emoji:'⚪',color:'#0057a8',logo:'https://upload.wikimedia.org/wikipedia/en/5/5b/KF_Tirana_logo.svg',strength:99,form:0,
+ players:[{n:'Bekaj',p:'GK'},{n:'Erbi Prenga',p:'RB'},{n:'Ndong',p:'CB'},{n:'Krešić',p:'CB'},{n:'Kola',p:'LB'},
+          {n:'Karabeci',p:'CDM'},{n:'Freitas',p:'CM'},{n:'Myslovič',p:'CM'},
+          {n:'Tabekou',p:'RW'},{n:'Xhixha',p:'ST'},{n:'Tare',p:'LW'}],
+ bench:[{n:'Tafas',p:'GK'},{n:'Halili',p:'RB'},{n:'Vera',p:'CB'},{n:'Haxhiu',p:'CM'},{n:'Marku',p:'CM'},{n:'Falaye',p:'RW'},{n:'Mihana',p:'ST'}],
+ formation:'4-3-3'},
     {id:'mon2',name:'Monaco',emoji:'🔴',color:'#d4001a',logo:'https://upload.wikimedia.org/wikipedia/en/e/ea/AS_Monaco_FC.svg',strength:81,form:0,
      players:[{n:'Majecki',p:'GK'},{n:'Vanderson',p:'RB'},{n:'Kehrer',p:'CB'},{n:'Maripán',p:'CB'},{n:'Caio Henrique',p:'LB'},
               {n:'Zakaria',p:'CDM'},{n:'Camara',p:'CM'},{n:'Golovin',p:'CM'},
@@ -1007,6 +1008,56 @@ const TEAMS_DB = {
      bench:[{n:'Bazunu',p:'GK'},{n:'Perraud',p:'RB'},{n:'Caleta-Car',p:'CB'},{n:'Stephens',p:'LB'},{n:'Lallana',p:'CDM'},{n:'A.Armstrong',p:'RW'},{n:'Mara',p:'ST'}],
      formation:'4-3-3'}
   ],
+ // ---- ABISSNET SUPERIORE 2025/26 (7 teams) ----
+  as:[
+  {id:'tir',name:'KF Tirana',emoji:'⚪',color:'#0057a8',logo:'https://upload.wikimedia.org/wikipedia/en/5/5b/KF_Tirana_logo.svg',strength:72,form:0,
+ players:[{n:'Bekaj',p:'GK'},{n:'Erbi Prenga',p:'RB'},{n:'Ndong',p:'CB'},{n:'Krešić',p:'CB'},{n:'Kola',p:'LB'},
+          {n:'Karabeci',p:'CDM'},{n:'Freitas',p:'CM'},{n:'Myslovič',p:'CM'},
+          {n:'Tabekou',p:'RW'},{n:'Xhixha',p:'ST'},{n:'Tare',p:'LW'}],
+ bench:[{n:'Tafas',p:'GK'},{n:'Halili',p:'RB'},{n:'Vera',p:'CB'},{n:'Haxhiu',p:'CM'},{n:'Marku',p:'CM'},{n:'Falaye',p:'RW'},{n:'Mihana',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'par',name:'FK Partizani',emoji:'🔴',color:'#cc0000',logo:'https://upload.wikimedia.org/wikipedia/en/d/d6/FK_Partizani_Tirana.svg',strength:76,form:0,
+ players:[{n:'Qirko',p:'GK'},{n:'Janjeva',p:'RB'},{n:'Atanaskoski',p:'CB'},{n:'Bytyçi',p:'CB'},{n:'Marku',p:'LB'},
+          {n:'İsgändärli',p:'CDM'},{n:'Kota',p:'CM'},{n:'Gudjufi',p:'CM'},
+          {n:'Skuka',p:'RW'},{n:'Toma',p:'ST'},{n:'Contreras',p:'LW'}],
+ bench:[{n:'Hoxha',p:'GK'},{n:'Preka',p:'RB'},{n:'Martinez',p:'CB'},{n:'Sidibe',p:'CM'},{n:'Lancaster',p:'CM'},{n:'Shabani',p:'RW'},{n:'Malaj',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'egn',name:'KF Egnatia',emoji:'🟠',color:'#f47920',logo:'https://upload.wikimedia.org/wikipedia/en/b/b9/FK_Egnatia_Rrogozhinë.svg',strength:80,form:0,
+ players:[{n:'Dajsinani',p:'GK'},{n:'Xhemajli',p:'RB'},{n:'Ndreca',p:'CB'},{n:'Jaime',p:'CB'},{n:'Sota',p:'LB'},
+          {n:'Aleksi',p:'CDM'},{n:'Medeiros',p:'CM'},{n:'Yahaya',p:'CM'},
+          {n:'Gruda',p:'RW'},{n:'Bakayoko',p:'ST'},{n:'Selmani',p:'LW'}],
+ bench:[{n:'Kuka',p:'GK'},{n:'Fangaj',p:'RB'},{n:'Aliyev',p:'CB'},{n:'Poci',p:'CM'},{n:'Ruci',p:'CM'},{n:'Kryeziu',p:'RW'},{n:'Burić',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'vll',name:'KF Vllaznia',emoji:'🔴',color:'#cc0000',logo:'https://upload.wikimedia.org/wikipedia/en/6/6f/FK_Vllaznia_Shkodër.svg',strength:84,form:0,
+ players:[{n:'Qarri',p:'GK'},{n:'Cheshmedjiev',p:'RB'},{n:'Stojanović',p:'CB'},{n:'Smajli',p:'CB'},{n:'Hakaj',p:'LB'},
+          {n:'Mala',p:'CDM'},{n:'Boshnjaku',p:'CM'},{n:'Gomes',p:'CM'},
+          {n:'Asani',p:'RW'},{n:'Balaj',p:'ST'},{n:'Coba',p:'LW'}],
+ bench:[{n:'Dodev',p:'GK'},{n:'Alivoda',p:'RB'},{n:'Dragoshi',p:'CB'},{n:'Beci',p:'CM'},{n:'Mehidri',p:'CM'},{n:'Pusi',p:'RW'},{n:'Gruda',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'din',name:'FC Dinamo City',emoji:'🔵',color:'#003087',logo:'https://upload.wikimedia.org/wikipedia/en/6/6e/FK_Dinamo_Tirana.svg',strength:78,form:0,
+ players:[{n:'Teqja',p:'GK'},{n:'Meksi',p:'RB'},{n:'Aliji',p:'CB'},{n:'Maliqi',p:'CB'},{n:'Hoxha',p:'LB'},
+          {n:'Jonuzi',p:'CDM'},{n:'Beqja',p:'CM'},{n:'Qefalija',p:'CM'},
+          {n:'Ferruku',p:'RW'},{n:'Zabergja',p:'ST'},{n:'Bregu',p:'LW'}],
+ bench:[{n:'Sali',p:'GK'},{n:'Quintanilha',p:'RB'},{n:'Neziri',p:'CB'},{n:'Dita',p:'CM'},{n:'Qardaku',p:'CM'},{n:'Vila',p:'RW'},{n:'Berisha',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'teu',name:'KF Teuta',emoji:'🔵',color:'#003399',logo:'https://upload.wikimedia.org/wikipedia/en/5/51/FK_Teuta_Durrës.svg',strength:74,form:0,
+ players:[{n:'Petani',p:'GK'},{n:'Toli',p:'RB'},{n:'Kotobelli',p:'CB'},{n:'Arapi',p:'CB'},{n:'Lushaku',p:'LB'},
+          {n:'Qehaja',p:'CDM'},{n:'Jazxhi',p:'CM'},{n:'Gjinollari',p:'CM'},
+          {n:'Zogos',p:'RW'},{n:'Karrica',p:'ST'},{n:'Diallo',p:'LW'}],
+ bench:[{n:'Celeski',p:'GK'},{n:'Hristija',p:'RB'},{n:'Kotobelli',p:'CB'},{n:'Bardhaj',p:'CM'},{n:'Hasani',p:'CM'},{n:'Bode',p:'RW'},{n:'Broja',p:'ST'}],
+ formation:'4-3-3'},
+
+{id:'fla',name:'Flamurtari',emoji:'🔴',color:'#cc0000',logo:'https://upload.wikimedia.org/wikipedia/en/b/b5/Flamurtari_FC.png',strength:65,form:0,
+ players:[{n:'Dervishi',p:'GK'},{n:'Leka',p:'RB'},{n:'Gjoka',p:'CB'},{n:'Mustafa',p:'CB'},{n:'Shehu',p:'LB'},
+          {n:'Plaka',p:'CDM'},{n:'Ceno',p:'CM'},{n:'Mala',p:'CM'},
+          {n:'Xhafa',p:'RW'},{n:'Taho',p:'ST'},{n:'Myftiu',p:'LW'}],
+ bench:[{n:'Hysa',p:'GK'},{n:'Zeneli',p:'RB'},{n:'Mici',p:'CB'},{n:'Leci',p:'CM'},{n:'Çuku',p:'CM'},{n:'Bala',p:'RW'},{n:'Pjeci',p:'ST'}],
+ formation:'4-4-2'},
   // ---- LA LIGA 2025/26 (20 teams) ----
   la:[
     {id:'rma',name:'Real Madrid',emoji:'⚪',color:'#febe10',logo:'https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg',strength:95,form:0,
